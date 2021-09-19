@@ -1,0 +1,10 @@
+{
+  "gitbook": ">=3.2.0",
+  "title": "ProjectD",
+  "links": {
+    "sidebar": {
+      "GitHub": "https://github.com/projectd-org/projectd",
+      "Discord": "https://discord.gg/2PbUG6vUTR"
+    }
+  }
+}

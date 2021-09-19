@@ -1,0 +1,4 @@
+= ProjectD
+
+https://github.com/projectd-org/projectd[GitHub] +
+https://discord.gg/2PbUG6vUTR[Discord]

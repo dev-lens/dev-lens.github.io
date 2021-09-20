@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Choose a language · ProjectD</title>
+        <title>ProjectD · ProjectD</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.21">
@@ -14,6 +14,18 @@
     <link rel="stylesheet" href="gitbook/style.css">
 
     
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
             
         
 
@@ -35,6 +47,7 @@
 
         
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -42,24 +55,465 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    
+
     </head>
     <body>
         
-<div class="book-langs-index" role="navigation">
-    <div class="inner">
-        <h3>Choose a language</h3>
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
 
-        <ul class="languages">
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
         
-            <li>
-                <a href="ru/">🇷🇺 Русский</a>
-            </li>
+        <li>
+            <a href="https://github.com/projectd-org/projectd" target="_blank" class="custom-link">GitHub</a>
+        </li>
+    
         
-        </ul>
+        <li>
+            <a href="https://discord.gg/2PbUG6vUTR" target="_blank" class="custom-link">Discord</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ProjectD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >ProjectD</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="projectd">ProjectD</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://github.com/projectd-org/projectd" target="_blank">GitHub</a><br>
+<a href="https://discord.gg/2PbUG6vUTR" target="_blank">Discord</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_название">Название</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Сокращение от project daemon. Читается как &quot;проджект ди&quot;, допустимо прочтение как projected.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_цель">Цель</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Создать стандарт для тулчейнов разработки кодовых проектов.
+Для этого разработать:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Формат хранения кода и конфигов утилит как взаимосвязанных типизированных структур данных</p>
+</li>
+<li>
+<p>Протокол общения между утилитами, основанный на этих структурах</p>
+</li>
+<li>
+<p>Путь бесшовной миграции для проектов и утилит</p>
+</li>
+<li>
+<p>Имплементацию демона, обеспечивающего вышеперечисленное</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_зачем">Зачем?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Представь себе что ты хранишь данные, необходимые для работы программы, в обычных файлах.</strong></p>
+</div>
+<div class="paragraph">
+<p>У тебя есть бессчётное множество SQL, no-SQL, key-value хранилищ.</p>
+</div>
+<div class="paragraph">
+<p>Со всеми их гарантиями, взаимосвязями между данными, контролем целостности, версионностью…​</p>
+</div>
+<div class="paragraph">
+<p>Ну ты понял.</p>
+</div>
+<div class="paragraph">
+<p>А ты по старинке, ручками, пишешь данные в файлы и читаешь их оттуда.</p>
+</div>
+<div class="paragraph">
+<p>Предусматриваешь контроль за целостностью.<br>
+Проверяешь корректность взаимосвязей.<br>
+Добавляешь свою систему миграций.<br>
+Может даже обрабатываешь эти файлы sed’ом.</p>
+</div>
+<div class="paragraph">
+<p>Странно, правда? Вряд ли кто-то назовёт это нормальным.</p>
+</div>
+<div class="paragraph">
+<p><strong>А теперь скажи, пожалуйста.</strong></p>
+</div>
+<div class="paragraph">
+<p>Почему ты делаешь именно это, когда пишешь свой код?</p>
+</div>
+<div class="paragraph">
+<p>Почему твой код хранится как обычный текст, хотя это структура данных?</p>
+</div>
+<div class="paragraph">
+<p>Почему конфиги утилит хранятся как текст, хотя это тоже структуры данных?</p>
+</div>
+<div class="paragraph">
+<p>Почему эти разнородные тексты обрабатывается утилитами как единая куча файлов?</p>
+</div>
+<div class="paragraph">
+<p>Почему утилиты определяют организацию этой кучи?</p>
+</div>
+<div class="paragraph">
+<p>Кажется, программисты должны работать с данными и алгоритмами.<br>
+Почему тогда наш код это всё ещё текст и файлы?</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_дано">Дано</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>На данный момент процесс разработки проектов примерно такой:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Клонируются из гита (скорее всего, из гитхаба)</p>
+</li>
+<li>
+<p>Разрабатывается на 99% в IDE в 3 основных системах:
+windows, macos, linux, всё 64 bit</p>
+</li>
+<li>
+<p>Во время разработки запускается куча тулов для обработки и генерации кода:
+получение зависимостей, компилятор, линтер, кодген, файловый сервер и т.д.</p>
+</li>
+<li>
+<p>Проект как-то запускается локально</p>
+</li>
+<li>
+<p>Изменения фиксируются в том же гите</p>
+</li>
+<li>
+<p>Потом запускается CI</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Все эти шаги осуществляются с помощью каких-то утилит (обычно из командной строки или напрямую из IDE).</p>
+</div>
+<div class="paragraph">
+<p>Rule-of-thumb для определения этих утилит - у них есть какой-то конфиг в корне проекта.</p>
+</div>
+<div class="paragraph">
+<p>package.json (и иже с ними в других языках), .git, .idea, *ignore файлы, you name it.</p>
+</div>
+<div class="paragraph">
+<p>Все они обрабатывают код согласно своим правилам.</p>
+</div>
+<div class="paragraph">
+<p>Что именно обрабатывать и как - определяется конфигами, в том числе их расположением в файловой иерархии.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_проблемы">Проблемы</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Код обрабатывается как текст - хотя это по сути AST</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Возможность зафиксировать некорректный синтаксис</p>
+</li>
+<li>
+<p>Появляются общие кодстайлы, хотя они могут быть индивидуальными</p>
+</li>
+<li>
+<p>Околонулевое переиспользование промежуточных представлений кода - все сами всё парсят и т.д.</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Код обрабатывается как куча файлов</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Возможность зафиксировать некорректную структуру (битые импорты/неправильные зависимости)</p>
+</li>
+<li>
+<p>Общая файловая структура проекта для всех юзкейсов - дерево (связный ациклический граф, симлинки не используют)</p>
+</li>
+<li>
+<p>Тулы частенько предполагают структуру файлов и не всегда позволяют её конфигурировать</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Вышесказанное сильно усложняют разработку своего тула - надо интегрироваться в существующие
+(плагинами, а API у всех разный) или снова писать код (использование готовых библиотек - это тоже код)
+для получения конфигов, поиска файлов, файл-вотчера, парсинга, принтинга и т.д.</p>
+</li>
+<li>
+<p>Сильно усложняется рефакторинг (за пределами поддерживаемого IDE/LSP) - приходится писать регэкспы или…​
+Писать свою программу со всеми прелестями предыдущего пункта.
+Почему я не могу сказать &quot;IDE, замени все токены на которые ругается компилятор вот на такие&quot;?
+Потому что код - это текст. И ошибки - тоже текст. И они не связаны (формально). И всё это в файлах.</p>
+</li>
+<li>
+<p>Тулы обычно рассчитаны на однократный запуск, а не на watch режим</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Поэтому кодген, например приходится запускать руками после каждого изменения файлов.
+Тут может помочь IDE, но зафиксировать эту обработку можно только если вся команда пользуется одной IDE.</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Сгенерированные файлы сильно засоряют гит и саму структуру файлов, хотя они не нужны пока кодген детерминирован</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Это, вместе с невозможностью переиспользовать промежуточные представления, сильно снижает производительность</p>
+<div class="olist lowerroman">
+<ol class="lowerroman" type="i">
+<li>
+<p>Цикл разработки сильно растягивается</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Конфиги лежат вперемешку с кодом</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Поэтому обычно во всех ignore файлах есть остальные ignore файлы</p>
+</li>
+<li>
+<p>Сильно засоряют визуальную структуру и поиск</p>
+</li>
+<li>
+<p>Расположение конфига может влиять на файлы, которые обрабатываются утилитой - неявное поведение</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>При этом у каждого тула свой формат конфигов и обычно нигде не зафиксирована ожидаемая схема данных</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Нет, описание схемы конфига в документации не считается фиксацией пока оно не тестируется
+и пока конфиг нельзя проверить без запуска самой утилиты</p>
+</li>
+<li>
+<p>Формат конфигов вообще не должен диктоваться автором тула, его должна интересовать только схема данных</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
     </div>
 </div>
 
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
         
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ProjectD","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ProjectD","links":{"sidebar":{"GitHub":"https://github.com/projectd-org/projectd","Discord":"https://discord.gg/2PbUG6vUTR"}},"gitbook":">=3.2.0"},"file":{"path":"README.adoc","mtime":"2021-09-20T07:38:08.289Z","type":"asciidoc"},"gitbook":{"version":"3.6.21","time":"2021-09-20T07:38:20.129Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
     </body>
 </html>
 

@@ -300,9 +300,6 @@ windows, macos, linux, всё 64 bit</p>
 <li>
 <p>Общая файловая структура проекта для всех юзкейсов - дерево (связный ациклический граф, симлинки не используют)</p>
 </li>
-<li>
-<p>Тулы частенько предполагают структуру файлов и не всегда позволяют её конфигурировать</p>
-</li>
 </ol>
 </div>
 </li>
@@ -355,8 +352,21 @@ windows, macos, linux, всё 64 bit</p>
 <li>
 <p>Сильно засоряют визуальную структуру и поиск</p>
 </li>
+</ol>
+</div>
+</li>
+<li>
+<p>Обрабатываемые файлы определяются в конфиге - хотя это должны быть независимые параметры</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Тулы частенько предполагают структуру файлов и не всегда позволяют её конфигурировать</p>
+</li>
 <li>
 <p>Расположение конфига может влиять на файлы, которые обрабатываются утилитой - неявное поведение</p>
+</li>
+<li>
+<p>Множественные конфиги и наследование конфигов поддерживается не всеми утилитами</p>
 </li>
 </ol>
 </div>
@@ -444,7 +454,7 @@ windows, macos, linux, всё 64 bit</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ProjectD","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ProjectD","links":{"sidebar":{"GitHub":"https://github.com/projectd-org/projectd","Discord":"https://discord.gg/2PbUG6vUTR"}},"gitbook":">=3.2.0"},"file":{"path":"README.adoc","mtime":"2021-09-20T08:25:48.313Z","type":"asciidoc"},"gitbook":{"version":"3.6.21","time":"2021-09-20T08:25:56.230Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ProjectD","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ProjectD","links":{"sidebar":{"GitHub":"https://github.com/projectd-org/projectd","Discord":"https://discord.gg/2PbUG6vUTR"}},"gitbook":">=3.2.0"},"file":{"path":"README.adoc","mtime":"2021-09-20T08:36:43.531Z","type":"asciidoc"},"gitbook":{"version":"3.6.21","time":"2021-09-20T08:36:51.603Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

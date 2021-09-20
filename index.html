@@ -160,46 +160,19 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
+<p>Стандарт для среды разработки (SDE) и его референсная имплементация (project daemon).</p>
+</div>
+<div class="paragraph">
+<p><em> произносится как &quot;проджект ди&quot; </em></p>
+</div>
+<div class="paragraph">
 <p><a href="https://github.com/projectd-org/projectd" target="_blank">GitHub</a><br>
 <a href="https://discord.gg/2PbUG6vUTR" target="_blank">Discord</a></p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_название">Название</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Сокращение от project daemon. Читается как &quot;проджект ди&quot;, допустимо прочтение как projected.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_цель">Цель</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Создать стандарт для тулчейнов разработки кодовых проектов.
-Для этого разработать:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Формат хранения кода и конфигов утилит как взаимосвязанных типизированных структур данных</p>
-</li>
-<li>
-<p>Протокол общения между утилитами, основанный на этих структурах</p>
-</li>
-<li>
-<p>Путь бесшовной миграции для проектов и утилит</p>
-</li>
-<li>
-<p>Имплементацию демона, обеспечивающего вышеперечисленное</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_зачем">Зачем?</h2>
+<h2 id="_мотивация">Мотивация</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p><strong>Представь себе что ты хранишь данные, необходимые для работы программы, в обычных файлах.</strong></p>
@@ -406,6 +379,37 @@ windows, macos, linux, всё 64 bit</p>
 </div>
 </div>
 </div>
+<div class="sect1">
+<h2 id="_решение">Решение</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Разработать:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Стандарт среды разработки, который включает:</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Формат хранения кода и конфигов утилит как взаимосвязанных типизированных структур данных</p>
+</li>
+<li>
+<p>Протокол общения между утилитами, основанный на этих структурах</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Путь бесшовной миграции для проектов и утилит</p>
+</li>
+<li>
+<p>Референсную имплементацию в виде демона</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
                                 
                                 </section>
                             
@@ -440,7 +444,7 @@ windows, macos, linux, всё 64 bit</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"ProjectD","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ProjectD","links":{"sidebar":{"GitHub":"https://github.com/projectd-org/projectd","Discord":"https://discord.gg/2PbUG6vUTR"}},"gitbook":">=3.2.0"},"file":{"path":"README.adoc","mtime":"2021-09-20T07:38:08.289Z","type":"asciidoc"},"gitbook":{"version":"3.6.21","time":"2021-09-20T07:38:20.129Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"ProjectD","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ProjectD","links":{"sidebar":{"GitHub":"https://github.com/projectd-org/projectd","Discord":"https://discord.gg/2PbUG6vUTR"}},"gitbook":">=3.2.0"},"file":{"path":"README.adoc","mtime":"2021-09-20T08:25:48.313Z","type":"asciidoc"},"gitbook":{"version":"3.6.21","time":"2021-09-20T08:25:56.230Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

@@ -1,4 +1,0 @@
-= Summary
-
-. link:README.adoc[ProjectD]
-. link:why.adoc[Почему?]

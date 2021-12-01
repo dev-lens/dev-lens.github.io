@@ -4,3 +4,62 @@
 
 https://github.com/projectd-org/projectd[GitHub] +
 https://discord.gg/2PbUG6vUTR[Discord]
+
+== Создание проекта
+
+[source]
+----
+sde init ./project-folder > project.sde
+----
+
+Создаст бинарник проекта из существующей папки.
+Туда войдут все файлы кроме тех, что находятся в gitignore.
+
+#TODO: инициализация из гит-ветки напрямую#
+
+Все симлинки будут проигнорированы, все файлы будут доступны на запись.
+Текстовые файлы будут сохранены как UTF, остальные - как Data.
+
+#TODO: линки#
+
+Создастся вьюха sfs:fs, вомпроизводящая ту же структуру файловой системы.
+
+== Работа
+
+[source]
+----
+sde fs ./project.sde project --write project-temp.sde
+----
+
+Спроецирует project.sde из вьюхи sfs:fs в папку project.
+
+Все изменения в этой папке (кроме gitignore) будут отражаться в project-temp.sde
+
+Оба sde файла будут защищены от записи пока команда работает.
+
+== Фиксация
+
+[source]
+----
+sde commit project-temp.sde project.sde
+----
+
+Все файлы из project-temp.sde будут перенесены в project.sde.
+
+#TODO: удаление temp#
+
+#TODO: сообщение#
+
+#TODO: gitless враппер#
+
+== Конфиг
+
+== Кодген
+
+== Уровни представления
+
+Нижний - capnp
+
+Средний - yaml
+
+Верхний - full-typed yaml со схемой ?

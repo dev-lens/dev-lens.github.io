@@ -157,12 +157,110 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="sde">SDE</h1>
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph">
 <p>Стандартная среда разработки - Standard Development Environment</p>
 </div>
 <div class="paragraph">
 <p><a href="https://github.com/projectd-org/projectd" target="_blank">GitHub</a><br>
 <a href="https://discord.gg/2PbUG6vUTR" target="_blank">Discord</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_создание_проекта">Создание проекта</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>sde init ./project-folder &gt; project.sde</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Создаст бинарник проекта из существующей папки.
+Туда войдут все файлы кроме тех, что находятся в gitignore.</p>
+</div>
+<div class="paragraph">
+<p><mark>TODO: инициализация из гит-ветки напрямую</mark></p>
+</div>
+<div class="paragraph">
+<p>Все симлинки будут проигнорированы, все файлы будут доступны на запись.
+Текстовые файлы будут сохранены как UTF, остальные - как Data.</p>
+</div>
+<div class="paragraph">
+<p><mark>TODO: линки</mark></p>
+</div>
+<div class="paragraph">
+<p>Создастся вьюха sfs:fs, вомпроизводящая ту же структуру файловой системы.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_работа">Работа</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>sde fs ./project.sde project --write project-temp.sde</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Спроецирует project.sde из вьюхи sfs:fs в папку project.</p>
+</div>
+<div class="paragraph">
+<p>Все изменения в этой папке (кроме gitignore) будут отражаться в project-temp.sde</p>
+</div>
+<div class="paragraph">
+<p>Оба sde файла будут защищены от записи пока команда работает.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_фиксация">Фиксация</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>sde commit project-temp.sde project.sde</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Все файлы из project-temp.sde будут перенесены в project.sde.</p>
+</div>
+<div class="paragraph">
+<p><mark>TODO: удаление temp</mark></p>
+</div>
+<div class="paragraph">
+<p><mark>TODO: сообщение</mark></p>
+</div>
+<div class="paragraph">
+<p><mark>TODO: gitless враппер</mark></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_конфиг">Конфиг</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_кодген">Кодген</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_уровни_представления">Уровни представления</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Нижний - capnp</p>
+</div>
+<div class="paragraph">
+<p>Средний - yaml</p>
+</div>
+<div class="paragraph">
+<p>Верхний - full-typed yaml со схемой ?</p>
+</div>
+</div>
 </div>
                                 
                                 </section>
@@ -198,7 +296,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SDE","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ProjectD","links":{"sidebar":{"GitHub":"https://github.com/projectd-org/projectd","Discord":"https://discord.gg/2PbUG6vUTR"}},"gitbook":">=3.2.0"},"file":{"path":"README.adoc","mtime":"2021-09-22T05:17:39.423Z","type":"asciidoc"},"gitbook":{"version":"3.6.21","time":"2021-09-22T05:17:46.841Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SDE","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ProjectD","links":{"sidebar":{"GitHub":"https://github.com/projectd-org/projectd","Discord":"https://discord.gg/2PbUG6vUTR"}},"gitbook":">=3.2.0"},"file":{"path":"README.adoc","mtime":"2021-12-01T21:25:58.559Z","type":"asciidoc"},"gitbook":{"version":"3.6.21","time":"2021-12-01T21:26:05.050Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

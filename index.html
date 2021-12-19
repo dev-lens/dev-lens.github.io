@@ -169,6 +169,59 @@
 </div>
 </div>
 <div class="sect1">
+<h2 id="_абстрактно">Абстрактно</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Процесс разработки проектов сильно поменялся за последние десятилетия.</p>
+</div>
+<div class="paragraph">
+<p>Инструменты разработчика - не особо.</p>
+</div>
+<div class="paragraph">
+<p>Надо сделать норм.</p>
+</div>
+<div class="paragraph">
+<p>Идея такая - инструменты отвязываются от файловой структуры (проекта и системы в целом).</p>
+</div>
+<div class="paragraph">
+<p>Становятся просто программами, которые на старте получают конфиг (как DI, нhttps://habr.com/ru/top/о на уровне системы в целом).</p>
+</div>
+<div class="paragraph">
+<p>Затем им приходят файлы, которые они должны обработать согласно этому конфигу.</p>
+</div>
+<div class="paragraph">
+<p>Для этого используется демон, с которым инструменты общаются через библиотеку SDK для конкретного языка.</p>
+</div>
+<div class="paragraph">
+<p>Схема данных конфига описывается в терминах языка и переводится в абстрактное описание (условную JSON schema), которым уже пользуется демон.</p>
+</div>
+<div class="paragraph">
+<p>Демон ведёт себя как мини-ос/шелл, инкапсулируя в себе работу с файлами и композицию утилит.</p>
+</div>
+<div class="paragraph">
+<p>Весь проект хранится в БД.</p>
+</div>
+<div class="paragraph">
+<p>Инструменты получают библиотеку-драйвер для работы с ней.</p>
+</div>
+<div class="paragraph">
+<p>Вьюхи (линзы)</p>
+</div>
+<div class="paragraph">
+<p>Кор-область и рабочая область</p>
+</div>
+<div class="paragraph">
+<p>Язык описания структур данных (со всей историей изменений, алиасы, версионность, скрипты миграции)</p>
+</div>
+<div class="paragraph">
+<p>Нужен быстрый интероп, сильная типизация, отображение в большинство популярных языков, ссылки друг на друга</p>
+</div>
+<div class="paragraph">
+<p>Декларативность вместо императивности</p>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="_создание_проекта">Создание проекта</h2>
 <div class="sectionbody">
 <div class="listingblock">
@@ -296,7 +349,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SDE","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ProjectD","links":{"sidebar":{"GitHub":"https://github.com/projectd-org/projectd","Discord":"https://discord.gg/2PbUG6vUTR"}},"gitbook":">=3.2.0"},"file":{"path":"README.adoc","mtime":"2021-12-01T21:25:58.559Z","type":"asciidoc"},"gitbook":{"version":"3.6.21","time":"2021-12-01T21:26:05.050Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"SDE","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":[],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ProjectD","links":{"sidebar":{"GitHub":"https://github.com/projectd-org/projectd","Discord":"https://discord.gg/2PbUG6vUTR"}},"gitbook":">=3.2.0"},"file":{"path":"README.adoc","mtime":"2021-12-19T12:10:15.012Z","type":"asciidoc"},"gitbook":{"version":"3.6.21","time":"2021-12-19T12:10:24.110Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
